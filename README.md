@@ -4,6 +4,9 @@
 > Passionate about **astrophysics**, **nuclear physics**, and **clean backend design** <br>
 > Gamer at heart — because even developers need respawn time 🎮 <br>
 
+> I love understanding how the universe works—from neutron stars to microservices. <br>
+> I believe every problem can be solved with logic, curiosity, and a good coffee.
+
 ## about me
 
 ```
@@ -14,7 +17,6 @@ focus: backend architecture, performance, clean code
 interests: astrophysics, nuclear physics, videogames  
 attitude: curious, polite, and a bit playful
 ```
-
 I craft reliable and scalable backend systems,
 and sometimes I look at neutron stars wondering if my code would survive there too.
 
