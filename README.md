@@ -49,5 +49,3 @@ and sometimes I look at neutron stars wondering if my code would survive there t
 > *“Keep coding, keep exploring — from the microcosm of code to the macrocosm of the universe.”*
 
 > Coding my way through life, one line at a time.
-
-> Hacker by nature, programmer by profession.
