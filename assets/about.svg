@@ -1,0 +1,71 @@
+<svg width="100%" viewBox="0 0 680 140" role="img" xmlns="http://www.w3.org/2000/svg">
+    <title>Omar - About Me</title>
+    <defs>
+        <style>
+            @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+            @keyframes typeL1 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL2 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL3 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL4 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL5 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+            .bg      { fill: #0d1117 }
+            .border  { fill: none; stroke: #30363d; stroke-width: 1 }
+            .prompt  { fill: #3fb950; font-family: monospace; font-size: 12px }
+            .hi-cmd  { fill: #58a6ff; font-family: monospace; font-size: 12px }
+            .k       { fill: #8b949e; font-family: monospace; font-size: 11px }
+            .comment { fill: #8b949e; font-family: monospace; font-size: 11px; font-style: italic }
+            .c-green { fill: #3fb950; font-family: monospace; font-size: 11px; font-style: italic }
+            .c-amber { fill: #e3b341; font-family: monospace; font-size: 11px; font-style: italic }
+            .c-blue  { fill: #58a6ff; font-family: monospace; font-size: 11px; font-style: italic }
+            .c-pink  { fill: #f778ba; font-family: monospace; font-size: 11px; font-style: italic }
+            .cursor  { fill: #3fb950; animation: blink 1s step-start infinite }
+            .l1 { animation: typeL1 0.40s steps(32,end) 0.1s  both }
+            .l2 { animation: typeL2 0.55s steps(55,end) 0.6s  both }
+            .l3 { animation: typeL3 0.45s steps(48,end) 1.25s both }
+            .l4 { animation: typeL4 0.40s steps(44,end) 1.80s both }
+            .l5 { animation: typeL5 0.40s steps(40,end) 2.30s both }
+            .show { animation: fadeIn 0s 2.75s both }
+        </style>
+    </defs>
+
+    <!-- background + border -->
+    <rect width="680" height="140" rx="8" class="bg"/>
+    <rect x="0.5" y="0.5" width="679" height="139" rx="8" class="border"/>
+
+    <!-- title bar -->
+    <circle cx="18" cy="12" r="4.5" fill="#ff5f57"/>
+    <circle cx="32" cy="12" r="4.5" fill="#febc2e"/>
+    <circle cx="46" cy="12" r="4.5" fill="#28c840"/>
+    <text x="340" y="17" text-anchor="middle" style="fill:#8b949e;font-family:monospace;font-size:10px">omar@dev — bash — 80x24</text>
+    <line x1="10" y1="24" x2="670" y2="24" style="stroke:#30363d;stroke-width:0.5"/>
+
+    <!-- prompt + command -->
+    <text x="16" y="40">
+        <tspan class="prompt l1">omar@dev</tspan><tspan class="k l1">:</tspan><tspan class="c-blue l1">~</tspan><tspan class="k l1"> $ </tspan><tspan class="hi-cmd l1">echo $ABOUT_ME</tspan>
+    </text>
+
+    <!-- output lines as comments -->
+    <text x="16" y="56">
+        <tspan class="comment l2">// 🚀 passionate about </tspan><tspan class="c-amber l2">astrophysics</tspan><tspan class="comment l2">, </tspan><tspan class="c-amber l2">nuclear physics</tspan><tspan class="comment l2"> &amp; </tspan><tspan class="c-green l2">clean backend design</tspan>
+    </text>
+
+    <text x="16" y="71">
+        <tspan class="comment l3">// 🎮 gamer at heart — because even developers need respawn time</tspan>
+    </text>
+
+    <text x="16" y="86">
+        <tspan class="comment l3">// ☕ I believe every problem can be solved with logic, curiosity, and a good coffee</tspan>
+    </text>
+
+    <text x="16" y="101">
+        <tspan class="comment l4">// 🌌 from </tspan><tspan class="c-blue l4">neutron stars</tspan><tspan class="comment l4"> to </tspan><tspan class="c-green l4">microservices</tspan><tspan class="comment l4"> — I love understanding how things work</tspan>
+    </text>
+
+    <!-- new prompt + cursor -->
+    <text x="16" y="116" class="show">
+        <tspan class="prompt">omar@dev</tspan><tspan class="k">:</tspan><tspan class="c-blue">~</tspan><tspan class="k"> $ </tspan>
+    </text>
+    <rect x="93" y="116" width="7" height="12" rx="1" class="cursor show"/>
+
+</svg>

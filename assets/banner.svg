@@ -1,0 +1,108 @@
+<svg width="100%" viewBox="0 0 680 210" role="img" xmlns="http://www.w3.org/2000/svg">
+    <title>Omar - Backend Developer</title>
+    <desc>Terminal-style animated banner for Omar's GitHub profile</desc>
+    <defs>
+        <style>
+            @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+            @keyframes scan { 0%{transform:translateY(0px)} 100%{transform:translateY(210px)} }
+            @keyframes typeL1 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL2 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL3 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL4 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL5 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL6 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL7 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL8 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes typeL9 { 0%{clip-path:inset(0 100% 0 0)} 100%{clip-path:inset(0 0% 0 0)} }
+            @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+            .bg      { fill: #0d1117 }
+            .border  { fill: none; stroke: #30363d; stroke-width: 1 }
+            .scanline{ fill: #58a6ff; opacity: 0.025; animation: scan 6s linear infinite }
+            .prompt  { fill: #3fb950; font-family: monospace; font-size: 12px }
+            .hi-cmd  { fill: #58a6ff; font-family: monospace; font-size: 12px }
+            .k       { fill: #8b949e; font-family: monospace; font-size: 11px }
+            .v-green { fill: #3fb950; font-family: monospace; font-size: 11px }
+            .v-blue  { fill: #58a6ff; font-family: monospace; font-size: 11px }
+            .v-amber { fill: #e3b341; font-family: monospace; font-size: 11px }
+            .v-white { fill: #e6edf3; font-family: monospace; font-size: 11px }
+            .v-pink  { fill: #f778ba; font-family: monospace; font-size: 11px }
+            .sep     { fill: #30363d; font-family: monospace; font-size: 11px }
+            .cursor  { fill: #3fb950; animation: blink 1s step-start infinite }
+            .l1 { animation: typeL1 0.45s steps(28,end) 0.1s  both }
+            .l2 { animation: typeL2 0.15s steps(5,end)  0.65s both }
+            .l3 { animation: typeL3 0.40s steps(38,end) 0.85s both }
+            .l4 { animation: typeL4 0.40s steps(38,end) 1.30s both }
+            .l5 { animation: typeL5 0.40s steps(38,end) 1.75s both }
+            .l6 { animation: typeL6 0.40s steps(38,end) 2.20s both }
+            .l7 { animation: typeL7 0.40s steps(38,end) 2.65s both }
+            .l8 { animation: typeL8 0.40s steps(38,end) 3.10s both }
+            .l9 { animation: typeL9 0.15s steps(5,end)  3.55s both }
+            .show { animation: fadeIn 0s 3.75s both }
+        </style>
+    </defs>
+
+    <!-- background + border -->
+    <rect width="680" height="210" rx="8" class="bg"/>
+    <rect x="0.5" y="0.5" width="679" height="209" rx="8" class="border"/>
+
+    <!-- scan line -->
+    <rect x="0" y="-30" width="680" height="30" class="scanline"/>
+
+    <!-- title bar -->
+    <circle cx="18" cy="12" r="4.5" fill="#ff5f57"/>
+    <circle cx="32" cy="12" r="4.5" fill="#febc2e"/>
+    <circle cx="46" cy="12" r="4.5" fill="#28c840"/>
+    <text x="340" y="17" text-anchor="middle" style="fill:#8b949e;font-family:monospace;font-size:10px">omar@dev — bash — 80x24</text>
+    <line x1="10" y1="24" x2="670" y2="24" style="stroke:#30363d;stroke-width:0.5"/>
+
+    <!-- line 1: prompt + command -->
+    <text x="16" y="40">
+        <tspan class="prompt l1">omar@dev</tspan><tspan class="k l1">:</tspan><tspan class="v-blue l1">~</tspan><tspan class="k l1"> $ </tspan><tspan class="hi-cmd l1">cat profile.json</tspan>
+    </text>
+
+    <!-- opening brace -->
+    <text x="16" y="55" class="sep l2">{</text>
+
+    <!-- name -->
+    <text x="16" y="70">
+        <tspan class="k l3">  "name"     : </tspan><tspan class="v-green l3">"Omar"</tspan><tspan class="k l3">,</tspan>
+    </text>
+
+    <!-- role -->
+    <text x="16" y="84">
+        <tspan class="k l4">  "role"     : </tspan><tspan class="v-blue l4">"Backend Developer @ Sorint.lab"</tspan><tspan class="k l4">,</tspan>
+    </text>
+
+    <!-- stack -->
+    <text x="16" y="98">
+        <tspan class="k l5">  "stack"    : </tspan><tspan class="v-white l5">[ </tspan><tspan class="v-green l5">"Go"</tspan><tspan class="v-white l5">, </tspan><tspan class="v-green l5">"Python"</tspan><tspan class="v-white l5">, </tspan><tspan class="v-green l5">"Java"</tspan><tspan class="v-white l5">, </tspan><tspan class="v-green l5">"Docker"</tspan><tspan class="v-white l5"> ],</tspan>
+    </text>
+
+    <!-- focus -->
+    <text x="16" y="112">
+        <tspan class="k l6">  "focus"    : </tspan><tspan class="v-white l6">[ </tspan><tspan class="v-blue l6">"backend architecture"</tspan><tspan class="v-white l6">, </tspan><tspan class="v-blue l6">"performance"</tspan><tspan class="v-white l6">, </tspan><tspan class="v-blue l6">"clean code"</tspan><tspan class="v-white l6"> ],</tspan>
+    </text>
+
+    <!-- passions -->
+    <text x="16" y="126">
+        <tspan class="k l7">  "passions" : </tspan><tspan class="v-white l7">[ </tspan><tspan class="v-amber l7">"astrophysics"</tspan><tspan class="v-white l7">, </tspan><tspan class="v-amber l7">"nuclear physics"</tspan><tspan class="v-white l7">, </tspan><tspan class="v-amber l7">"gaming"</tspan><tspan class="v-white l7"> ],</tspan>
+    </text>
+
+    <!-- attitude -->
+    <text x="16" y="140">
+        <tspan class="k l8">  "attitude" : </tspan><tspan class="v-pink l8">"curious, polite, and a bit playful"</tspan>
+    </text>
+
+    <!-- closing brace -->
+    <text x="16" y="155" class="sep l9">}</text>
+
+    <!-- new prompt + blinking cursor -->
+    <text x="16" y="172" class="show">
+        <tspan class="prompt">omar@dev</tspan><tspan class="k">:</tspan><tspan class="v-blue">~</tspan><tspan class="k"> $ </tspan>
+    </text>
+    <rect x="69" y="161" width="7" height="12" rx="1" class="cursor show"/>
+
+    <!-- bottom quote -->
+    <text x="340" y="195" text-anchor="middle" style="fill:#30363d;font-family:monospace;font-size:10px">// I craft reliable systems and sometimes stare at neutron stars wondering if my code would survive there</text>
+
+</svg>
