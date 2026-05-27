@@ -66,6 +66,6 @@
     <text x="16" y="116" class="show">
         <tspan class="prompt">omar@dev</tspan><tspan class="k">:</tspan><tspan class="c-blue">~</tspan><tspan class="k"> $ </tspan>
     </text>
-    <rect x="93" y="116" width="7" height="12" rx="1" class="cursor show"/>
+    <rect x="95" y="106" width="7" height="12" rx="1" class="cursor show"/>
 
 </svg>

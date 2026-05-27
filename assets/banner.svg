@@ -100,7 +100,7 @@
     <text x="16" y="172" class="show">
         <tspan class="prompt">omar@dev</tspan><tspan class="k">:</tspan><tspan class="v-blue">~</tspan><tspan class="k"> $ </tspan>
     </text>
-    <rect x="69" y="161" width="7" height="12" rx="1" class="cursor show"/>
+    <rect x="95" y="163" width="7" height="12" rx="1" class="cursor show"/>
 
     <!-- bottom quote -->
     <text x="340" y="195" text-anchor="middle" style="fill:#30363d;font-family:monospace;font-size:10px">// I craft reliable systems and sometimes stare at neutron stars wondering if my code would survive there</text>
